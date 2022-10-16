@@ -9,24 +9,24 @@ steps:
   image: alpine
   commands:
   #- echo "$VAULT_ADDR"
-  - echo "$USERNAME"
-  - echo "$PASSWORD"
-  environment:
-    USERNAME:
-      from_secret: username
-    PASSWORD:
-      from_secret: password
+  - echo "USERNAME"
+  - echo "PASSWORD"
+  # environment:
+  #   USERNAME:
+  #     from_secret: username
+  #   PASSWORD:
+  #     from_secret: password
 
----
-kind: secret
-name: username
-get:
-  path: secrets/data/docker
-  name: username
+# ---
+# kind: secret
+# name: username
+# get:
+#   path: secrets/data/docker
+#   name: username
 
----
-kind: secret
-name: password
-get:
-  path: secrets/data/docker
-  name: password
+# ---
+# kind: secret
+# name: password
+# get:
+#   path: secrets/data/docker
+#   name: password
