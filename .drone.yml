@@ -9,7 +9,7 @@ steps:
   image: alpine
   commands:
   #- echo "$VAULT_ADDR"
-  - echo "USERNAME"
+  - echo USERNAME
   - echo "PASSWORD"
   # environment:
   #   USERNAME:
