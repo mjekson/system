@@ -8,7 +8,7 @@ steps:
 - name: test
   image: alpine
   commands:
-  - echo "$VAULT_ADDR"
+  # - echo "$VAULT_ADDR"
   - echo $USERNAME
   - echo $PASSWORD
   environment:
