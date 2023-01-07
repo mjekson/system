@@ -27,8 +27,11 @@ func main() {
 		fmt.Println(hostname)
 	}
 
-	net.LookupNS()
-	net.ResolveTCPAddr()
-	net.DialTCP()
-	net.TCPAddr
+	// net.LookupNS()
+	// net.ResolveTCPAddr()
+	// net.DialTCP()
 }
+
+// to create a dictionary with continents, add lists of countries,
+// located on them, and write a program
+// which will give a response in the style of "There are such states on this mainland"
